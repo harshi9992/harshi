@@ -1,0 +1,117 @@
+1.program to print largest of two numbers
+n1=int(input('enter num1:'))
+n2=int(input('enter num2:'))
+n3=int(input('enter num3:'))
+if n1>n2 and n1>n3:
+    print(n1,'n1 is greater')
+elif n2>n3 and n2>n1:
+    print(n2,'n2 is greater')
+elif n3>n1 and n3>n2:
+    print(n3,'n3 is greater')
+#2.program to reverse a string
+a=str(input('enter string:'))
+b=a[::-1]
+if(b==a):
+    print('given string is palindrome')
+else:
+    print('given string is not a palindrome')
+#3.program to check the given number is prime or not
+n=int(input('enter num:'))
+temp=n
+reverse=1
+digit=0
+if(n>1):
+    for i in (2,n):
+        if(n%i==0):
+            print('not prime number')
+            break
+        else:
+            print('prime number')
+            break
+else:
+    print('not prime number')
+#4.program to find palindrome(number) using try except finally
+n=int(input('enter a number:'))
+try:
+    int(n)
+except:
+    print('enter valid input of integer type')
+else:
+    temp=n
+    rev=0
+    while (n>0):
+        digit=n%10
+        rev=rev*10+digit
+        n=n//10
+    if rev==temp:
+        print('palindrome')
+    else:
+        print('not a palindrome')
+finally:
+    print('done')
+#5.program to find sum of the squares of first n natural numbers
+n=int(input('enter n value:'))
+t,s=0,0
+for i in range(1,n+1):
+    s=i*i
+    t=t+s
+    i=i+1
+print('the sum of the squares of first n natural numbers is:',t)
+1.Write a Python program to find area of a circle using math function.
+import math
+def area(r):
+    a= math.pi*r*r
+    print('area:',a)
+area(float(input('radius:')))
+#2.Write a program to find Area of Regular Polygon using math function.
+import math
+n=int(input('enter number of sides:'))
+s=int(input('enter length of each side:'))
+area=(s**2*n)/(4*math.tan(math.pi/n))
+print('area of rectangular ppolygon:',area)
+#3.Write a program to find  Area of a Segment of a Circle Formula using math function.
+import math
+r=int(input('enter radius:'))
+angle=int(input('enter angle:'))
+print('area of minor segment:',area(r,angle))
+print('area of major segment:',area(r,(360-angle)))
+def area(r,angle):
+    area_sector=math.pi*(r*r)*(angle/360)
+    area_triangle=1/2*(r*r)*math.sin((angle*math.pi)/180)
+    segment=area_sector-area_triangle
+    return segment
+#4.Write a python program to shuffle list l1=[100,1,2,3,30,40,”hai”,”hello”].
+import random
+l1=[100,1,2,3,30,40,'hai','hello']
+print('the given list:',(l1))
+random.shuffle(l1)
+print('the shuffled list:',(l1))
+#5.Write a program to generate random numbers between 1,10000 and
+#difference between each random number is 50.
+import random
+print('random number of list is:')
+print(random.choice(range(1,10000)))
+print('random number from range is:')
+print(random.randrange(1,10000,50))
+#6.Write a python program by using math module to find
+#i.Sin600
+#ii.cos(pi)
+#iii.tan900
+#iv.angle of sin(0.8660254037844386)
+#v.5^8
+#vi.Square root of 400
+#vii.The value of 5^e
+#viii.The value of Log(1024), base 2
+#ix.The value of Log(1024), base 10
+#x.The Floor and Ceiling value of 23.56
+import math
+print('sin60:',math.sin(60))
+print('cos(pi):',math.pi)
+print('tan90:',math.tan(90))
+print('angle of 0.8660:',math.degrees(math.sin(0.8660254037844386)))
+print('5^8:',math.pow(5,8))
+print('Square root of 400:',math.sqrt(400))
+print('The value of 5^e:',math.pow(5,math.e))
+print('The value of Log(1024), base 2:',math.log2(1024))
+print('The value of Log(1024), base 10:',math.log10(1024))
+print('The Floor and Ceiling value of 23.56:',math.floor(23.56))
