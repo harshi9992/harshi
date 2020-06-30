@@ -1,0 +1,45 @@
+1.Take two inputs from user and check whether they are equal or not.
+a= str(input('enter string2:'))
+b= str(input('enter string2:'))
+if a==b:
+    print('strings are equal')
+else: print 
+#2.Take 3 inputs from user and check :
+#        all are equal
+#           any of two are equal
+#          ( use and or )
+
+a=int(input('enter num1:'))
+b=int(input('enter num2:'))
+c=int(input('enter num3:'))
+if a==b==c:
+    print('all are equal')
+elif a==b!=c or a!=b==c or a==c!=b:
+    print('two inputs are equal')
+#3.Take two number and check whether the sum is greater than 5, less than 5 or equal to 5.
+a=int(input('enter num1:'))
+b=int(input('enter num2:'))
+c=a+b
+if c>5:
+    print('sum is greater than 5')
+elif c<5:
+    print('sum is lesser than 5')
+else: print('sum is equal to 5')
+#4.Suppose passing marks of a subject is 35. Take input of marks from user
+#and check whether it is greater than passing marks or not.
+marks=int(input('enter marks:'))
+if marks>35:
+    print('greater than passing marks')
+elif marks<35:
+    print('lesser than passing marks')
+else: print('marks are equal to 35')
+#5.Write a Python function to find the Max of three numbers
+a=int(input('enter num1:'))
+b=int(input('enter num2:'))
+c=int(input('enter num3:'))
+if a>b and a>c:
+    print('a is greater',a)
+elif b>a and b>c:
+    print('b is greater',b)
+else:
+    print('c is greater',c)
