@@ -1,0 +1,111 @@
+1.progarm to design simple caluclator
+
+v1=float(input('enter value1:'))
+
+v2=float(input('enter value2:'))
+
+ans=input('enter operation in words')
+
+if ans=='addition':
+
+    print(v1+v2)
+
+elif ans=='subtraction':
+
+     print(v1-v2)
+
+elif ans=='multiplication':
+
+     print(v1*v2)
+
+elif ans=='division':
+
+     print(v1/v2)
+
+elif ans=='modulus':
+
+     print(v1%v2)
+
+elif ans=='exponent':
+
+     print(v1**v2)
+
+elif ans=='floor division':
+
+     print(v1//v2)
+
+else:
+
+    print('enter valid operation name')
+
+#2.program to caluclate simple interest
+
+principle=int(input('enter principle:'))
+
+time=float(input('enter time:'))
+
+rate=float(input('enter rate:'))
+
+print('simple_interest=',(principle*time*rate)/100)
+
+#3.program to caluclate area of circle
+
+radius=float(input('enter the radius:'))
+
+pi=3.14
+
+print('the area of circle=',(pi*radius*radius))
+
+#4.program to caluclate area of triangle
+
+base=float(input('enter the base:'))
+
+height=float(input('enter the height:'))
+
+#5.program to convert temparature from celsius to fahrenheit
+
+celsius=float(input('enter the temparature in celsius:'))
+
+print('temparuture in fahrenheit=',((celsius*9/5)+32))
+
+print('the area of triangle=',(0.5*base*height))
+
+#6.program to caluclate area of rectangle
+
+length=float(input('enter the length:'))
+
+breath=float(input('enter the breath:'))
+
+print('the area of rectangle=',length*breath)
+
+#7.program to caluclate perimeter of square
+
+side=float(input('enter the side:'))
+
+print('the perimeter of square=',(4*side))
+
+#8.program to caluclate circumference of circle
+
+radius=float(input('enter the radius:'))
+
+pi=3.14
+
+print('the area of circle=',(2*pi*radius))
+
+#9.program to swap two numbers
+
+num1=int(input('enter the num1:'))
+
+num2=int(input('enter the num2:'))
+
+num1=num1+num2
+
+num2=num1-num2
+
+num1=num1-num2
+
+print('numbers after swapping:')
+
+print('num1=',num1)
+
+print('num2=',num2)
